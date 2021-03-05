@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>documnets</title>
+  </head>
+  <body>
+    <h1>please check console</h1>
+    <script>
+      const user = {
+        firstName: "Simranjeet",
+        lastName: "singh",
+        Address: {
+          Line1: "address line 1",
+          Line2: "address line 2",
+          State: "Delhi",
+          Pin: 110085,
+          Country: "India",
+          City: "New Delhi",
+        },
+        phoneNo: 9999999999,
+      };
+
+      let {
+        firstName,
+        lastName,
+        Address: { Line1, Line2, State, Pin, Country, City },
+        phoneNo,
+      } = user;
+
+      console.log(
+        `My name is ${firstName} ${lastName}.
+        My Address is ${Line1} ${Line2}, ${State}, ${Pin}, ${Country}, ${City}.
+        My phone number is ${phoneNo}`
+      );
+    </script>
+  </body>
+</html>
